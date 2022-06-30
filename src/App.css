@@ -1,11 +1,128 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.nav-ul {
+  padding: 5px;
+  margin: 0;
+  background-color: skyblue;
+}
+
+.nav-ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav-ul li a {
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.nav-logo {
+  float: left;
+  border-radius: 30px;
+  width: 54px;
+  height: 46px;
+  margin-left: 7px;
+  margin-top: 3px;
+}
+
+/* This is for footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: skyblue;
+  text-align: center;
+  width: 100%;
+}
+
+/* This is for Signup page */
+
+.register {
+  margin-left: 30%;
+}
+
+.register h1 {
+  display: block;
+  padding: 7px;
+  margin: 20px;
+}
+
+.register .inputBox {
+  display: block;
+  padding: 7px;
+  margin: 20px;
+  width: 300px;
+  border: 1px solid skyblue;
+}
+
+.register .appButton {
+  display: block;
+  padding: 10px;
+  margin: 20px;
+  width: 150px;
+  border: 1px solid;
+  background-color: skyblue;
+}
+
+/* This is for Login page */
+
+.login {
+  margin-left: 30%;
+}
+
+.login h1 {
+  display: block;
+  padding: 7px;
+  margin: 20px;
+}
+
+.login .inputBox {
+  display: block;
+  padding: 7px;
+  margin: 20px;
+  width: 300px;
+  border: 1px solid skyblue;
+}
+
+.login .appButton {
+  display: block;
+  padding: 10px;
+  margin: 20px;
+  width: 150px;
+  border: 1px solid;
+  background-color: skyblue;
+}
+
+/* This is for Add Product Page */
+
+.product {
+  margin-left: 30%;
+}
+
+.inputBox {
+  display: block;
+  padding: 7px;
+  margin: 20px;
+  width: 300px;
+  border: 1px solid skyblue;
+}
+
+.appButton {
+  display: block;
+  padding: 10px;
+  margin: 20px;
+  width: 150px;
+  border: 1px solid;
+  background-color: skyblue;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -32,6 +149,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
