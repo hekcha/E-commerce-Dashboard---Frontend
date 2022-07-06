@@ -7,6 +7,8 @@ import SignUp from './components/SignUp';
 import PrivateComponent from './components/PrivateComponent'
 import Login from './components/Login';
 import AddProduct from './components/AddProduct';
+import ProductList from './components/ProductList';
+import UpdateProduct from './components/UpdateComponent';
 
 function App() {
   return (
@@ -15,18 +17,19 @@ function App() {
         <Nav />
         {/* We can only put route inside routes to route the link of a particular element */}
         <Routes>
-          <Route element = {<PrivateComponent/>}>
-          <Route path='/' element={<h1>This is home page</h1> } />
-          <Route path='/add' element={<AddProduct/> } />
-          <Route path='/update' element={<h1>This is Update Product Page</h1> } />
-          <Route path='/logout' element={<h1>This is logout</h1> } />
-          <Route path='/profile' element={<h1>This is profile</h1> } />
+          <Route element={<PrivateComponent />}>
+            <Route path='/' element={<h1><ProductList/></h1>} />
+            <Route path='/add' element={<AddProduct />} />
+            {/* this is how we send id without the use of useParams */}
+            <Route path='/update/:id' element={<UpdateProduct/>} />
+            <Route path='/logout' element={<h1>This is logout</h1>} />
+            <Route path='/profile' element={<h1>This is profile</h1>} />
           </Route>
-          <Route path='/signup' element={<SignUp/> } />
-          <Route path='/login' element={<Login/> } />
+          <Route path='/signup' element={<SignUp />} />
+          <Route path='/login' element={<Login />} />
         </Routes>
       </BrowserRouter>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
